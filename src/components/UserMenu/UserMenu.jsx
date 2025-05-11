@@ -8,7 +8,7 @@ const UserMenu = () => {
 
     return (
         <div className="flex justify-end items-center gap-[10px]">
-            <span className="text-2xl">Hello, {user.name}</span>
+            <span className="text-2xl">Hello,{user.name}</span>
              <button onClick={() => dispatch(logoutThunk())} className='bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700 transition'>Logout ➔ </button>
         </div>
     );
