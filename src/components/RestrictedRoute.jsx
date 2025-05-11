@@ -1,0 +1,12 @@
+// import toast from "react-hot-toast";
+import { useSelector } from "react-redux";
+import { Navigate } from "react-router-dom";
+import { selectIsLoggedIn } from "../redux/auth/selectors";
+
+const RestrictedRoute = ({ children, redirectTo = '/' }) => {
+    const isLoggedIn = useSelector(selectIsLoggedIn);
+    console.log('RestrictedRoute rendered. isLoggedIn:', isLoggedIn);      
+    return isLoggedIn ? <Navigate to={redirectTo} /> : children;
+};
+
+export default RestrictedRoute;

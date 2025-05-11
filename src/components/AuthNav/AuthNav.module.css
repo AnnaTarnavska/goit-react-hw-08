@@ -1,0 +1,21 @@
+.header {
+    height: 70px;
+    background-color: rgb(193, 213, 237);
+}
+
+.link {
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.nav {
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.active {
+    color: rgb(97, 155, 225);
+    text-decoration: underline;
+}
