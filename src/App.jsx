@@ -24,8 +24,6 @@ const App = () => {
     dispatch(refreshUserThunk());
   }, [dispatch]);
 
-  console.log('App rendered. isRefreshing:', isRefreshing);
-
   return isRefreshing ? null : (
     <>
       <Routes>

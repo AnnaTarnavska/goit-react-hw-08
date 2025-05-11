@@ -5,7 +5,6 @@ import { selectIsLoggedIn } from "../redux/auth/selectors";
 
 const RestrictedRoute = ({ children, redirectTo = '/' }) => {
     const isLoggedIn = useSelector(selectIsLoggedIn);
-    console.log('RestrictedRoute rendered. isLoggedIn:', isLoggedIn);      
     return isLoggedIn ? <Navigate to={redirectTo} /> : children;
 };
 

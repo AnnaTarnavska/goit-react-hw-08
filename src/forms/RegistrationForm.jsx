@@ -36,7 +36,6 @@ const RegistrationForm = () => {
                                     <label className="label">Password</label>
                                     <Field name='password' type="password" className="input" placeholder="Password" />
                                     <Link to='/login' className="link link-hover">You already have account? Sign in!</Link>
-                                    {/* <div><a className="link link-hover">You already have account? Sign in!</a></div> */}
                                     <button className="btn btn-neutral mt-4" type="submit">Registration</button>
                                 </fieldset>
                             </Form>
